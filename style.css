@@ -23,3 +23,12 @@ body {
   font-family: var(--Font);
   background-color: var(--Very-Light-Gray);
 }
+
+.card {
+  outline: 1px solid black;
+  padding: 3rem;
+  width: 300px;
+}
+
+.card-description {
+}
