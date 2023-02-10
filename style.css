@@ -37,7 +37,8 @@ body {
   background-color: var(--Very-Light-Gray);
 }
 p {
-  font-weight: 200;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
 }
 header {
   padding: 2rem;
@@ -47,7 +48,9 @@ header h1 {
   font-weight: 200;
 }
 header h3 {
-  font-weight: 200;
+  font-weight: 400;
+  padding-top: 1rem;
+  color: var(--Grayish-Blue);
 }
 header .emphasised {
   font-weight: 600;
@@ -65,6 +68,7 @@ main {
 .card-section {
   display: flex;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 .card {
@@ -72,26 +76,26 @@ main {
   margin: 1rem;
   max-width: 100%;
   height: auto;
-  box-shadow: 0px 8px 12px 2px rgb(116, 116, 116);
+  box-shadow: 0px 8px 12px 2px var(--Grayish-Blue);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 .card img {
   align-self: flex-end;
-  /* margin-top: 3rem; */
+  margin-top: 3rem;
 }
 .card-1 {
-  border-top: 3px solid teal;
+  border-top: 4px solid var(--Cyan);
 }
 .card-2 {
-  border-top: 3px solid red;
+  border-top: 4px solid var(--Red);
 }
 .card-3 {
-  border-top: 3px solid orange;
+  border-top: 4px solid var(--Orange);
 }
 .card-4 {
-  border-top: 3px solid var(--Blue);
+  border-top: 4px solid var(--Blue);
 }
 .card-description {
   max-width: 90%;
@@ -112,13 +116,19 @@ p {
   justify-content: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .card-section {
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   header h1 {
-    /* max-width: 90%;? */
     font-size: 18px;
   }
   header h3 {
-    /* max-width: 90%; */
     font-size: 14px;
     margin-top: 1rem;
   }
@@ -129,7 +139,6 @@ p {
     font-size: 12px;
   }
   .card-section {
-    flex-direction: column;
     width: 90%;
   }
 }
