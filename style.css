@@ -91,7 +91,7 @@ main {
   border-top: 3px solid orange;
 }
 .card-4 {
-  border-top: 3px solid blue;
+  border-top: 3px solid var(--Blue);
 }
 .card-description {
   max-width: 90%;
