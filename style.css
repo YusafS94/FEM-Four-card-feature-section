@@ -35,6 +35,7 @@ p {
 body {
   font-family: var(--Font);
   background-color: var(--Very-Light-Gray);
+  font-size: var(--Body);
 }
 p {
   font-weight: 400;
